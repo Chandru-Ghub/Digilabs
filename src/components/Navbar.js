@@ -31,7 +31,7 @@ expand_more
       <div className="navright">
         <div className="logout">
         <span>Login</span>
-        <span className="material-symbols-outlined">logout</span>
+        <span className="material-symbols-outlined">login</span>
         </div>
         <div className="menu">
             <span onClick={()=>setToggle(!toggle)} className="material-symbols-outlined">
