@@ -1,0 +1,140 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 20px;
+    background: #ffffff;
+    position: sticky;
+    top: 46px;
+    z-index: 10;
+}
+
+.navleft{
+    >img{
+       width: 100px;
+    }
+}
+.navmid ,.navtab{
+    >ul{
+        display: flex;
+        column-gap: 30px;
+        transition: 1s;
+        >li{
+            display: flex;
+            font-family: 'Inter', sans-serif;
+            height: 20px;
+            font-weight: 500;
+            color:  #363C46;
+        }
+        
+    }
+}
+
+/* Menu */
+.menu{
+    cursor: pointer;
+}
+.navright{
+
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    >.logout{
+        background:  #E6E7E9;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 8px;
+    }
+}
+.menu{
+    display: none;
+   
+}
+
+
+@media (max-width:950px){
+
+    .navbar{
+        justify-content: space-between;
+        /* background: lightblue; */
+    }
+
+    .menu{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .navmid{
+        >ul{
+            display: flex;
+            z-index: 10;
+            position: fixed;
+            top: 115px;
+            left: -500px;
+            bottom: 0;
+            gap: 20px;
+            flex-direction: column;
+            box-shadow: 5px 2px 20px rgb(181, 181, 181);
+            background: rgb(255, 255, 255);
+            width: 250px;
+            padding: 25px 0;
+            border-top: 2px solid #582066;
+            >li{
+                /* background: green; */
+                cursor: pointer;
+                display: flex;
+                padding-left: 40px;
+                padding-bottom: 45px;
+                border-bottom: 1px solid rgb(194, 193, 193);
+            }
+            >p{
+                cursor: pointer;
+                display: flex;
+                padding-left: 40px;
+
+            }
+        }
+    }
+
+    .navtab{
+        >ul{
+            display: flex;
+            z-index: 10;
+            position: fixed;
+            top: 115px;
+            left: 0px;
+            bottom: 0;
+            gap: 20px;
+            flex-direction: column;
+            box-shadow: 5px 2px 20px rgb(181, 181, 181);
+            background: rgb(255, 255, 255);
+            width: 250px;
+            padding: 25px 0;
+            border-top: 2px solid #582066;
+            >li{
+                /* background: green; */
+                cursor: pointer;
+                display: flex;
+                padding-left: 40px;
+                padding-bottom: 45px;
+                border-bottom: 1px solid rgb(194, 193, 193);
+            }
+            >p{
+                cursor: pointer;
+                display: flex;
+                padding-left: 40px;
+
+            }
+        }
+    }
+
+}

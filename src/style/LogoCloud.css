@@ -1,0 +1,23 @@
+.logocloud{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.marslide{
+    width: 800px;
+}
+.marq{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    >li{
+        >img{
+            width: 100px;
+        }
+    }
+}

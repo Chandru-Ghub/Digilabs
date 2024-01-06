@@ -1,0 +1,109 @@
+.feature1{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    >.con1{
+        font-size: 40px;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        line-height: 48px;
+        width: 700px;
+    }
+    >.con2{
+        font-style: 18px;
+        width: 576px;
+        line-height: 28px;
+        font-family: 'Inter', sans-serif;
+        color: #5A6475;
+
+    }
+    >.compare{
+        width: 217px;
+        height: 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 500;
+        color:rgb(151, 18, 168);
+        >button{
+           background: transparent;
+           border: none;
+           font-size: 15px;
+           font-weight: 800;
+           color:rgb(151, 18, 168);
+        }
+    }
+}
+
+.content2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 10px;
+    width: 90%;
+    margin-bottom: 50px;
+    .clogo{
+        /* transition: 1s; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        >span{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #F4EFF6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#582066
+        }
+        >span:hover{
+            background: #582066;
+            color: white;
+            transform: rotate(-10deg);
+            transition: .2s;
+        }
+        >p{
+            font-weight: 700;
+        }
+        >div{
+            color:#5A6475;
+            font-size: 14px;
+            width: 320px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+    .clogo:hover{
+        background-color: #ffffff;
+        border-radius: 0px;
+        transform: scale(1.02);
+        box-shadow: 1px 5px 15px 5px #e9e8ea;
+        cursor: pointer;
+        /* >div{
+            color: white;
+        }
+        >p{
+            color: white;
+        } */
+    }
+    
+}

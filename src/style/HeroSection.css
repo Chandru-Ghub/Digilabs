@@ -1,0 +1,68 @@
+.hero{
+    height: 532px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to right,rgb(208,200, 210),#ffffff,rgb(208, 200, 210)); */
+    gap: 25px;
+    /* padding: 128px,80px,32px,80px; */
+    /* childs */
+    margin-top: 35px;
+    >.con1{
+        color: #582066;
+        height: 20px;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+    }
+    >.con2{
+        width: 702px;
+        /* background: red; */
+        height: 216px;
+        font-size: 62px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 72px;
+    }
+    >.con3{
+        font-size: 18px;
+        font-weight: 400;
+        width: 648px;
+        height: 56px;
+        color: #5A6475;
+        line-height: 28px;
+        font-family: 'Inter', sans-serif;
+    }
+    >.con4{
+        width: 193px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        background-color: #582066;
+        border-radius: 8px;
+        padding: 16px;
+        >button{
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        >span{
+            color: white;
+        }
+       
+    }
+
+    >.con5{
+        color:#5A6475;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        font-family: 'Inter', sans-serif;
+    }
+}
