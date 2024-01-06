@@ -20,11 +20,6 @@ expand_more
           <li>About</li>
           <li>Carrier</li>
           <li>Contact</li>
-          {!toggle?
-          <p>
-              <h3>Mode UI</h3>
-          </p>  :''
-        }
         </ul>
       </div>
 
