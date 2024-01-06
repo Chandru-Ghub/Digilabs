@@ -23,9 +23,9 @@
         margin-bottom: 30px;
        }
        >ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: start !important;
         gap: 24px;
         >li{
             color:#5A6475;
