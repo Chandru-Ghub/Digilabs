@@ -45,6 +45,7 @@
         background-color: #582066;
         border-radius: 8px;
         padding: 16px;
+        transition: .2s;
         >button{
             background-color: transparent;
             border: none;
@@ -56,6 +57,9 @@
             color: white;
         }
        
+    }
+    >.con4:hover{
+        background-color: #582066b8;
     }
 
     >.con5{

@@ -5,13 +5,13 @@ const Feature1 = () => {
     <div className='feature1'>
 
         <div className="content">
-            <div className="con1">
+            <div className="con1" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>
             Elevating Card Programs with Cutting-Edge Technology
             </div>
-            <div className="con2">
+            <div className="con2" >
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            <div className="compare">
+            <div className="compare" >
                 <button>
                 Compare all Pro features
                 </button>
@@ -22,7 +22,7 @@ const Feature1 = () => {
         </div>
 
         <div className="content2">
-              <div className="conleft clogo">
+              <div className="conleft clogo" data-aos="fade-up" data-aos-delay='100' data-aos-offset='250' data-aos-duration="1000" data-aos-once='true'>
               <span class="material-symbols-outlined">
               language
               </span>
@@ -32,7 +32,7 @@ const Feature1 = () => {
                 </div>
               </div>
 
-              <div className="conmid clogo">
+              <div className="conmid clogo" data-aos="fade-up" data-aos-delay='250' data-aos-offset='250' data-aos-duration="1000" data-aos-once='true'>
               <span class="material-symbols-outlined">
               key
               </span>
@@ -42,7 +42,7 @@ const Feature1 = () => {
                 </div>
               </div>
 
-              <div className="conright clogo">
+              <div className="conright clogo" data-aos="fade-up" data-aos-delay='400' data-aos-offset='250' data-aos-duration="1000" data-aos-once='true'>
               <span class="material-symbols-outlined">
               lock
               </span>

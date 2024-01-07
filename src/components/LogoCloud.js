@@ -13,7 +13,7 @@ const LogoCloud = () => {
   return (
     <div className='logocloud'>
       <div className="marslide">
-        <Marquee pauseOnHover={true} delay={3}>
+        <Marquee pauseOnHover={true} delay={1}>
           <ul className='marq'>
           <li>
             <img src={img1} alt="" />

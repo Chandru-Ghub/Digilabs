@@ -13,8 +13,9 @@ const Testimonial = () => {
   const images = [img1,img2,img3,img4,img5]
   return (
     <div className='testimonial'>
-      <h2>Testimonial</h2>
+      <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-once='true'>Testimonial</h2>
       <p>Mode UI is trusted by over 1 million users and 100,000 companies worldwide.</p>
+      <div className='line1'></div>
       <Marquee pauseOnClick='true' gradient='true' gradientColor='white' gradientWidth={300}>
           {
             images.map(data =>{

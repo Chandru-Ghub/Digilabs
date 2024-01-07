@@ -2,9 +2,9 @@ import React from 'react'
 import '../style/HeroSection.css'
 const HeroSection = () => {
   return (
-    <div className='hero'>
+    <div className='hero' >
         <div className='con1'>Seamless experience</div>
-        <div className="con2">
+        <div className="con2"  data-aos="fade-down" data-aos-delay='50' data-aos-duration="1000" data-aos-once='false'>
               Unleashing the Next Generation of card Solution
         </div>
           <div className="con3">

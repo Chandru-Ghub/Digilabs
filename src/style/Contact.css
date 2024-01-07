@@ -28,8 +28,15 @@
         background-color: #582066;
         color: white;
         border-radius: 8px;
+        transition: .2s;
+        cursor: pointer;
+    }
+    >.card:hover{
+        background-color: #582066b1;
     }
     >.customer{
+        transition: .2s;
+        cursor: pointer;
         width: 190px;
         height: 44px;
         display: flex;
@@ -40,5 +47,8 @@
         color: #5A6475;
         border-radius: 8px;
         font-weight: 600;
+    }
+    >.customer:hover{
+        background-color: #bcb8bdb1;
     }
 }

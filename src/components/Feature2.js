@@ -5,7 +5,7 @@ const Feature2 = () => {
   return (
     <div className='feature2'>
        <div className="content">
-            <div className="con1">
+            <div className="con1" data-aos="fade-left"  data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>
             Elevating Card Programs with Cutting-Edge Technology
             </div>
             <div className="con2">
@@ -22,7 +22,7 @@ const Feature2 = () => {
         </div>
 
         <div className="rows">
-        <div className="f2">
+        <div className="f2" data-aos="fade-right"  data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>
             <div className='f2top'>
                 Global library for fonts and color
             </div>
@@ -53,8 +53,8 @@ const Feature2 = () => {
 
             </div>
         </div>
-          <div className="revenue">
-              <div className="spend">
+          <div className="revenue" data-aos="fade-up" data-aos-delay='200' data-aos-offset='250' data-aos-duration="1000" data-aos-once='true' >
+              <div className="spend" >
                 <p>Spending</p>
                 <div>
                 <span class="material-symbols-outlined">
@@ -66,7 +66,7 @@ const Feature2 = () => {
 
               <div className="spendmid">
                   <h3>127.14</h3>
-                  <span>USD</span>
+                  <span style={{fontSize:'35px',fontWeight:'700'}}>USD</span>
               </div>
               <div className="spendmid2">
                 <div>vs last week</div>
@@ -78,6 +78,7 @@ const Feature2 = () => {
                   <li>1000 USD</li>
                   <li>5000 USD</li>
                 </ul>
+                <p style={{background:'#5d2a6a',height:'8px',borderRadius:'10px',marginTop:'10px'}}></p>
               </div>
           </div>
         </div>
