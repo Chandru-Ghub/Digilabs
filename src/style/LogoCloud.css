@@ -6,7 +6,7 @@
 }
 
 .marslide{
-    width: 80%;
+    width: 900px;
 }
 .marq{
     display: flex;
@@ -19,5 +19,11 @@
         >img{
             width: 100px;
         }
+    }
+}
+
+@media(max-width:760px){
+    .marslide{
+        width: 80%;
     }
 }
