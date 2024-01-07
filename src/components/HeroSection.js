@@ -11,13 +11,13 @@ const HeroSection = () => {
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           </div>
 
-          <div className="con4">
+          <div className="con4" id='bio'>
               <button>Unlock your Card</button>
               <span class="material-symbols-outlined">
 arrow_right_alt
 </span>
           </div>
-          <div className="con5">
+          <div className="con5" >
             *No credit card required
           </div>
     </div>

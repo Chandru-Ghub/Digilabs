@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/Feature1.css'
 const Feature1 = () => {
   return (
-    <div className='feature1'>
+    <div className='feature1' >
 
         <div className="content">
             <div className="con1" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../style/Navbar.css";
 import modeUi from '../Images/Mode UI.png'
+import{HashLink as Link} from 'react-router-hash-link'
 import {motion,useScroll} from 'framer-motion'
 const Navbar = () => {
     const [toggle,setToggle] = useState(true)
@@ -27,14 +28,14 @@ const Navbar = () => {
 
       <div className={toggle?"navmid":'navtab'}>
         <ul>
-          <li>Card access <span class="material-symbols-outlined">
+          <li><Link to='/#bio' smooth style={{color:'inherit'}}>Our Users</Link></li>
+          <li><Link to='/#about' smooth style={{color:'inherit'}}>About</Link></li>
+          <li><Link to='/#card' smooth style={{color:'inherit'}} className="arr">Card access <span class="material-symbols-outlined">
 expand_more
-</span></li>
-          <li>Banking</li>
-          <li>Processing</li>
-          <li>About</li>
-          <li>Carrier</li>
-          <li>Contact</li>
+</span></Link></li>
+          <li><Link to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li>
+          <li><Link to='/#testi' smooth style={{color:'inherit'}}>Testimonial</Link></li>
+          <li><Link to='/#contact' smooth style={{color:'inherit'}}>Contact</Link></li>
         </ul>
       </div>
 

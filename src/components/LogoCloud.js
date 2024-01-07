@@ -11,7 +11,7 @@ import img7 from '../Images/nuxt.png'
 import img8 from '../Images/wise.png'
 const LogoCloud = () => {
   return (
-    <div className='logocloud'>
+    <div className='logocloud' >
       <div className="marslide">
         <Marquee pauseOnHover={true} delay={1}>
           <ul className='marq'>
@@ -42,6 +42,7 @@ const LogoCloud = () => {
           </ul>
         </Marquee>
         </div>
+        <span id='about'></span>
     </div>
   )
 }

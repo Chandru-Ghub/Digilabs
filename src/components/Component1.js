@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/Component1.css'
 const Component1 = () => {
   return (
-    <div className='component1'>
+    <div className='component1' >
       <div className="comp1" data-aos="fade-up" data-aos-delay='100' data-aos-offset='100' data-aos-duration="1000" data-aos-once='true'>
             <span>2 Million</span>
             <div>Customer</div>
@@ -23,6 +23,7 @@ const Component1 = () => {
             <div>Latest Version</div>
             <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
       </div>
+      <span id='testi'></span>
     </div>
   )
 }

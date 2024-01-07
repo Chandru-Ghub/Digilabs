@@ -2,7 +2,8 @@ import React from 'react'
 import '../style/Component1.css'
 const Cards = () => {
   return (
-    <div className="payments">
+    <div className="payments" >
+        <span id='banking'></span>
         <div className='ll1'></div>
             <p>For your security, all orders are processed via Stripe or PayPal.</p>
             <ul>

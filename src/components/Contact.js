@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/Contact.css'
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' >
       <div className="limits" data-aos="fade-down" data-aos-delay='50' data-aos-duration="1000" data-aos-once='true'>
       Unlock Limitless Possibilities with Our New Card Solutions
       </div>

@@ -11,10 +11,11 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Testimonial from './components/Testimonial';
 import Cards from './components/Cards';
-
+import { BrowserRouter} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
         <AnnouncementBar/>
         <Navbar/>
         <HeroSection/>
@@ -26,6 +27,7 @@ function App() {
         <Testimonial/>
         <Contact/>
         <Footer/>
+        </BrowserRouter>
     </div>
   );
 }

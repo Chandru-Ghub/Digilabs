@@ -10,7 +10,11 @@
     top: 46px;
     z-index: 10;
 }
-
+.arr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .navleft{
     >img{
        width: 100px;
@@ -104,7 +108,7 @@
                 display: flex;
                 padding-left: 40px;
                 padding-bottom: 45px;
-                border-bottom: 1px solid rgb(194, 193, 193);
+                border-bottom: 1px solid rgb(223, 223, 223);
             }
             >p{
                 cursor: pointer;
@@ -136,7 +140,7 @@
                 display: flex;
                 padding-left: 40px;
                 padding-bottom: 45px;
-                border-bottom: 1px solid rgb(194, 193, 193);
+                border-bottom: 1px solid rgb(227, 226, 226);
             }
             >p{
                 cursor: pointer;

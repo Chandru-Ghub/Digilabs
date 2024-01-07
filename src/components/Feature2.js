@@ -21,7 +21,7 @@ const Feature2 = () => {
             </div>
         </div>
 
-        <div className="rows">
+        <div className="rows" id='card'>
         <div className="f2" data-aos="fade-right"  data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>
             <div className='f2top'>
                 Global library for fonts and color
@@ -72,7 +72,7 @@ const Feature2 = () => {
                 <div>vs last week</div>
                 <div>Last Purchase (Feb 24 19:59 UTC-5)</div>
               </div>
-              <div className="spendend">
+              <div className="spendend" >
                 <ul>
                   <li>400 USD</li>
                   <li>1000 USD</li>
@@ -81,8 +81,10 @@ const Feature2 = () => {
                 <p style={{background:'#5d2a6a',height:'8px',borderRadius:'10px',marginTop:'10px'}}></p>
               </div>
           </div>
+        
         </div>
-    </div>
+      
+    </div >
   )
 }
 
