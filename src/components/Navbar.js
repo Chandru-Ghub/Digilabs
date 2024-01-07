@@ -28,14 +28,14 @@ const Navbar = () => {
 
       <div className={toggle?"navmid":'navtab'}>
         <ul>
-          <li><Link to='/#bio' smooth style={{color:'inherit'}}>Our Users</Link></li>
-          <li><Link to='/#about' smooth style={{color:'inherit'}}>About</Link></li>
-          <li><Link to='/#card' smooth style={{color:'inherit'}} className="arr">Card access <span class="material-symbols-outlined">
+          <li><Link onClick={()=>setToggle(!toggle)} to='/#bio' smooth style={{color:'inherit'}}>Our Users</Link></li>
+          <li><Link onClick={()=>setToggle(!toggle)} to='/#about' smooth style={{color:'inherit'}}>About</Link></li>
+          <li><Link onClick={()=>setToggle(!toggle)}to='/#card' smooth style={{color:'inherit'}} className="arr">Card access <span class="material-symbols-outlined">
 expand_more
 </span></Link></li>
-          <li><Link to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li>
-          <li><Link to='/#testi' smooth style={{color:'inherit'}}>Testimonial</Link></li>
-          <li><Link to='/#contact' smooth style={{color:'inherit'}}>Contact</Link></li>
+          <li><Link onClick={()=>setToggle(!toggle)} to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li>
+          <li><Link onClick={()=>setToggle(!toggle)} to='/#testi' smooth style={{color:'inherit'}}>Testimonial</Link></li>
+          <li><Link onClick={()=>setToggle(!toggle)} to='/#contact' smooth style={{color:'inherit'}}>Contact</Link></li>
         </ul>
       </div>
 
