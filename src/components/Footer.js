@@ -5,6 +5,7 @@ import { FaDiscord } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import modeUi from '../Images/Mode UI.png'
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
 
     <div className="footer">
@@ -68,7 +69,7 @@ const Footer = () => {
             <FaDiscord/>
      
         </ul>
-          <p>&copy; 2024 Mode UI Inc. All Rights Reserved.</p>
+          <p>&copy; {`${year} Mode UI Inc. All Rights Reserved.`}</p>
       </div>
     </div>
   )
