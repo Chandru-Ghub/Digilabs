@@ -15,7 +15,7 @@ const Feature2 = () => {
                 <button>
                 Compare all Pro features
                 </button>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
             arrow_right_alt
             </span>
             </div>
@@ -57,7 +57,7 @@ const Feature2 = () => {
               <div className="spend" >
                 <p>Spending</p>
                 <div>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                 credit_card
                 </span>
                 <p>9349 visa card</p>

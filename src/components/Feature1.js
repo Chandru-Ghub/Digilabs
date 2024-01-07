@@ -15,7 +15,7 @@ const Feature1 = () => {
                 <button>
                 Compare all Pro features
                 </button>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
             arrow_right_alt
             </span>
             </div>
@@ -23,7 +23,7 @@ const Feature1 = () => {
 
         <div className="content2">
               <div className="conleft clogo" data-aos="fade-up" data-aos-delay='100' data-aos-offset='250' data-aos-duration="1000" data-aos-once='true'>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
               language
               </span>
               <p>Globally Accepted</p>
@@ -33,7 +33,7 @@ const Feature1 = () => {
               </div>
 
               <div className="conmid clogo" data-aos="fade-up" data-aos-delay='250' data-aos-offset='250' data-aos-duration="1000" data-aos-once='true'>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
               key
               </span>
               <p>Biometric Integrated</p>
@@ -43,7 +43,7 @@ const Feature1 = () => {
               </div>
 
               <div className="conright clogo" data-aos="fade-up" data-aos-delay='400' data-aos-offset='250' data-aos-duration="1000" data-aos-once='true'>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
               lock
               </span>
               <p>Fully Secured</p>

@@ -9,14 +9,14 @@ const Contact = () => {
       <div className="supports">
           <div className="card">
               <p>Unlock your card</p>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
                 credit_card
                 </span>
           </div>
           
           <div className="customer">
           <p>Customer support</p>
-          <span class="material-symbols-outlined">
+          <span className="material-symbols-outlined">
           headphones
           </span>
           </div>

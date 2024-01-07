@@ -13,7 +13,7 @@ const HeroSection = () => {
 
           <div className="con4" id='bio'>
               <button>Unlock your Card</button>
-              <span class="material-symbols-outlined">
+              <span className="material-symbols-outlined">
 arrow_right_alt
 </span>
           </div>

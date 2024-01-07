@@ -18,9 +18,9 @@ const Testimonial = () => {
       <div className='line1'></div>
       <Marquee pauseOnClick='true' gradient='true' gradientColor='white' gradientWidth={150}>
           {
-            images.map(data =>{
+            images.map((data,i) =>{
               return(
-                <div className='incon'>
+                <div className='incon' key={i}>
               <img src={data} alt="" />
                 <div className='reviewcus'>
                   I had the pleasure of experiencing the next generation of card solutions with this incredible product. It's refreshing to see such innovation in the financial industry.

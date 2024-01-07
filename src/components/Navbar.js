@@ -30,7 +30,8 @@ const Navbar = () => {
         <ul>
           <li><Link onClick={()=>setToggle(!toggle)} to='/#bio' smooth style={{color:'inherit'}}>Our Users</Link></li>
           <li><Link onClick={()=>setToggle(!toggle)} to='/#about' smooth style={{color:'inherit'}}>About</Link></li>
-          <li><Link onClick={()=>setToggle(!toggle)}to='/#card' smooth style={{color:'inherit'}} className="arr">Card access <span class="material-symbols-outlined">
+          <li><Link onClick={()=>setToggle(!toggle)}to='/#card' smooth style={{color:'inherit'}} className="arr">Card access 
+          <span className="material-symbols-outlined">
 expand_more
 </span></Link></li>
           <li><Link onClick={()=>setToggle(!toggle)} to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li>
