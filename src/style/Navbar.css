@@ -20,13 +20,17 @@
     >ul{
         display: flex;
         column-gap: 30px;
-        transition: 1s;
+        transition: .5s;
         >li{
             display: flex;
             font-family: 'Inter', sans-serif;
             height: 20px;
             font-weight: 500;
             color:  #363C46;
+            cursor: pointer;
+        }
+        >li:hover{
+            opacity: .7;
         }
         
     }
@@ -43,13 +47,19 @@
     justify-content: center;
     align-items: center;
     >.logout{
-        background:  #E6E7E9;
+        background:  #f3f3f4;
         display: flex;
         column-gap: 10px;
         justify-content: center;
         align-items: center;
         padding: 5px 10px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    >.logout:hover{
+        background-color: #875193;
         border-radius: 8px;
+        color: white;
     }
 }
 .menu{
@@ -110,7 +120,7 @@
             display: flex;
             z-index: 10;
             position: fixed;
-            top: 115px;
+            top: 122px;
             left: 0px;
             bottom: 0;
             gap: 20px;

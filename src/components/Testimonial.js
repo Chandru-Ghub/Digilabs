@@ -16,7 +16,7 @@ const Testimonial = () => {
       <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-once='true'>Testimonial</h2>
       <p>Mode UI is trusted by over 1 million users and 100,000 companies worldwide.</p>
       <div className='line1'></div>
-      <Marquee pauseOnClick='true' gradient='true' gradientColor='white' gradientWidth={300}>
+      <Marquee pauseOnClick='true' gradient='true' gradientColor='white' gradientWidth={150}>
           {
             images.map(data =>{
               return(

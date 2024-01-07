@@ -70,3 +70,105 @@
         font-family: 'Inter', sans-serif;
     }
 }
+
+@media(max-width:700px){
+    .hero{
+        >.con1{
+            color: #582066;
+            height: 20px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+        >.con2{
+            width: 80%;
+            /* background: red; */
+            height: 216px;
+            font-size: 50px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 72px;
+        }
+        >.con3{
+            font-size: 17px;
+            font-weight: 400;
+            width: 80%;
+            height: auto;
+            color: #5A6475;
+            line-height: 28px;
+            font-family: 'Inter', sans-serif;
+        }
+        
+    }
+
+}
+@media(max-width:550px){
+    .hero{
+        >.con1{
+            color: #582066;
+            height: 20px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+        >.con2{
+            width: 80%;
+            /* background: red; */
+            height: 216px;
+            font-size: 42px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 70px;
+        }
+      
+        
+    }
+}
+@media(max-width:400px){
+    .hero{
+        >.con1{
+            color: #582066;
+            height: 20px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+        >.con2{
+            width: 80%;
+            /* background: red; */
+            height: 216px;
+            font-size: 40px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 50px;
+        }
+        >.con4{
+            width: 160px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            background-color: #582066;
+            border-radius: 8px;
+            padding: 16px;
+            transition: .2s;
+            >button{
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            >span{
+                color: white;
+            }
+           
+        }
+      
+        
+    }
+}

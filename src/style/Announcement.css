@@ -30,10 +30,14 @@
 
     .annnounce{
         font-size: 14px;
-        flex-direction: column;
         gap: 10px;
-        >.c1{
-            font-size: 12px;
-        }
+    
+    }
+}
+@media(max-width:550px){
+    .annnounce{
+        font-size: 12px;
+        gap: 10px;
+    
     }
 }
