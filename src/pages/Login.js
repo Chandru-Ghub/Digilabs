@@ -69,7 +69,7 @@ const Login = () => {
             <form  className="registerdata" onSubmit={handleSubmit}>
                 <div className="leftform rfm">
                     <input onChange={(e)=>setUsername(e.target.value)} required className="username" placeholder='username' />
-                    <input onChange={(e)=>setPassword(e.target.value)}  required className="password" placeholder='password' />
+                    <input type='password' onChange={(e)=>setPassword(e.target.value)}  required className="password" placeholder='password' />
                     <p style={{color:'red'}}>{err}</p>
                 </div>
                
