@@ -12,7 +12,10 @@ const AdminPanel = () => {
         useEffect(()=>{
             authAxios.get('/subscribers')
             .then(res =>setUsers(res.data))
-            .catch(err => console.log(err))
+            .catch(err => {
+                window.location.reload()
+                console.log(err)
+            })
         },[])
   return (
     <div className='panel'>
