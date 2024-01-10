@@ -93,7 +93,7 @@ const UpdatePage = () => {
             <input value={buttonTxt} onChange={(e)=>setBtnTxt(e.target.value)} required type="text" placeholder='Enter Button text here' />
         </div>
 
-        <div className="image">
+        <div className="image" id='/subs'>
             <input type="file"  onChange={handleFile}/>
         </div>
         <button type='submit'>Update</button>
@@ -104,7 +104,7 @@ const UpdatePage = () => {
             <p>Preview Image</p>
         </div>:''
         }
-    </div>
+    </div >
     </div>
   )
 }

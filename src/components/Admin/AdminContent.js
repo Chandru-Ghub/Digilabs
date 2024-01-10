@@ -20,7 +20,7 @@ const fetchData = async()=>{
     }
 }
   return (
-    <div className='admincontent' id='/subs'>
+    <div className='admincontent'  id='/users'>
         <div className="adminupdates">
             <div className="subscribers">
             <div className="subsmem">
@@ -41,7 +41,7 @@ const fetchData = async()=>{
                 })
             }
            </div>
-            <div className="subscribers" id='/users' >
+            <div className="subscribers" >
             <div className="subsmem">
                 Registered Users!
             </div>
