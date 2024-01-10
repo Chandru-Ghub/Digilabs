@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../style/HeroSection.css'
-import axios from 'axios'
 const HeroSection = ({title,btn}) => {
 
   return (
