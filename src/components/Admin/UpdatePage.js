@@ -37,7 +37,7 @@ const UpdatePage = () => {
         try {
             const update = await authAxios.post('/updatepage',logoImg?{title,buttonTxt,logoImg}:{title,buttonTxt})
             setOpen(false)
-            alert('Details updates! Refresh to see change')
+            alert('Details updates!')
 
         } catch (error) {
             console.log(error)

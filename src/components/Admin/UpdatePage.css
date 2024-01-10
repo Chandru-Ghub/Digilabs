@@ -15,19 +15,19 @@
     flex-direction: column;
     row-gap: 20px;
     >.curlogo{
-        display: flex;
+        display: flex !important;
     }
     >.titleupdate{
-        display: flex;
+        display: flex !important;
 
     }
     >.btnname{
-        display: flex;
+        display: flex !important;
         
     }
     >.btnname, .curlogo, .titleupdate{
         min-height: 70px;
-        display: flex;
+        display: flex !important;
         align-items: center;
         >p{
             width: auto;
