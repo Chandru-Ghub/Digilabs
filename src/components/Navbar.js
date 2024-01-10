@@ -3,7 +3,7 @@ import "../style/Navbar.css";
 import modeUi from '../Images/Mode UI.png'
 import{HashLink as Link} from 'react-router-hash-link'
 import {motion,useScroll} from 'framer-motion'
-const Navbar = () => {
+const Navbar = ({logo}) => {
     const [toggle,setToggle] = useState(true)
     const {scrollYProgress} = useScroll()
     const status = window.localStorage.getItem('isAdmin')
@@ -28,7 +28,7 @@ const Navbar = () => {
                 ></motion.div>
 
       <div className="navleft">
-        <img src={modeUi} alt="" />
+        <img src={logo} alt="" />
       </div>
 
       <div className={toggle?"navmid":'navtab'}>
@@ -42,22 +42,22 @@ expand_more
           {/* <li><Link onClick={()=>setToggle(!toggle)} to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li> */}
           <li><Link onClick={()=>setToggle(!toggle)} to='/#testi' smooth style={{color:'inherit'}}>Testimonial</Link></li>
           <li><Link onClick={()=>setToggle(!toggle)} to='/#contact' smooth style={{color:'inherit'}}>Contact</Link></li>
+{!status && <li><Link onClick={()=>setToggle(!toggle)} to='/#sub' smooth style={{color:'inherit'}}>Subscribe</Link></li>}
 {status=='true'?<li><Link onClick={()=>setToggle(!toggle)} to='/dashboard' smooth style={{color:'inherit'}}>Dashboard</Link></li>:''}
         </ul>
       </div>
 
       <div className="navright">
-        <div className="logout">
-       {status ?<>
-        <span onClick={()=>logout()}>logout</span>
+       {status && <p className="zoom">{status=="true"?"ADMIN":"USER"}</p>}
+       {status ? <div onClick={()=>logout()} className="logout">
+        <span >logout</span>
         <span className="material-symbols-outlined">logout</span>
-       </>:
-       <>
+        </div>:
+       <div className="logout">
         <span><Link to='/signin' smooth style={{color:'inherit'}}>Login</Link></span>
         <span className="material-symbols-outlined">login</span>
-       </>
-      }
         </div>
+      }
         <div className="menu">
             <span onClick={()=>setToggle(!toggle)} className="material-symbols-outlined">
                 {toggle?'menu':'close'}

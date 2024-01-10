@@ -6,9 +6,19 @@ import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signin from './pages/Signin';
+import { useState } from 'react';
 function App() {
+  const status = window.localStorage.getItem('isAdmin')
+  const [toggle,setToggle] = useState(true)
   return (
     <div className="App">
+    {
+      status && 
+      <div className={toggle?"banner":'banner2'}>
+        <p onClick={()=>setToggle(!toggle)}>x</p>
+  public user can only able to acess the subscription not a admin or registred user
+</div>
+    }
       <BrowserRouter>
         <Routes>
           <Route path='/' element={ <Home/>}/>

@@ -6,6 +6,7 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import { authAxios } from '../axiosInterceptor/AxiosInterceptor'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
+import axios from 'axios'
 const Login = () => {
     const navigate = useNavigate()
     const [username,setUsername] = useState('')
@@ -18,7 +19,7 @@ const Login = () => {
             setOpen(true)
             console.log(username,password)
             try {
-                const res = await authAxios.post('/signin',{username,password})
+                const res = await axios.post('https://digilabsbackend.onrender.com/api/signin',{username,password})
                 window.localStorage.setItem('modeUItoken',res.data.token)
                 window.localStorage.setItem('isAdmin',res.data.data.isAdmin)
                 setOpen(false)
@@ -49,9 +50,14 @@ const Login = () => {
 </div>
         <div className='register'>
             <div className="demo">
-                <p>Demo User</p>
+                <p>Admin User</p>
                 <div>
                     <p>username: <span>chandru</span></p>
+                    <p>password: <span>12345</span></p>
+                </div>
+                <p>Demo User</p>
+                <div>
+                    <p>username: <span>user1</span></p>
                     <p>password: <span>12345</span></p>
                 </div>
             </div>

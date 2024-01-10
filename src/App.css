@@ -5,8 +5,39 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Manrope', sans-serif;
+ 
 }
 .App {
   text-align: center;
+  position: relative;
+  >.banner{
+    position: absolute;
+    top: 250px;
+    background: #ffffff;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    left: 27%;
+    color: #582066;
+    border: 2px solid #d4d4d4;
+    box-shadow: 5px 2px 20px rgb(181, 181, 181);
+    border-radius: 10px;
+    z-index: 50;
+  }
+  >.banner2{
+    display: none;
+  }
+>div{
+  >p{
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    right: 15px;
+    cursor: pointer;
+    color: red;
+  }
+}
 }
 

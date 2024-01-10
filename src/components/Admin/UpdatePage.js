@@ -6,6 +6,7 @@ import {getDownloadURL, ref, uploadBytes} from 'firebase/storage'
 import { imgDB } from '../../Firebase'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
+
 const UpdatePage = () => {
     const[page,setPage] = useState([])
     const[logoImg,setFile] = useState();
@@ -13,11 +14,15 @@ const UpdatePage = () => {
     const[title,setTitle] = useState();
     const [open,setOpen] = useState(false);
     const fetchData = async()=>{
-        const res = await authAxios.get('/getpage')
+        console.log('f////irst')
+        try {
+            const res = await authAxios.get('/getpage')
         setPage(res.data)
         setTitle(res.data.title)
         setBtnTxt(res.data.buttonTxt)
-        console.log(page)
+        } catch (error) {
+            console.log(error)
+        }
     }
     useEffect(()=>{
         fetchData()
@@ -29,10 +34,8 @@ const UpdatePage = () => {
     const handleSubmit = async(e)=>{
         e.preventDefault()
         setOpen(true)
-        console.log(title,buttonTxt,logoImg)
         try {
             const update = await authAxios.post('/updatepage',logoImg?{title,buttonTxt,logoImg}:{title,buttonTxt})
-            console.log(update)
             setOpen(false)
             window.location.reload()
 
@@ -83,7 +86,7 @@ const UpdatePage = () => {
     <div className="addpageDetails">
        <form onSubmit={handleSubmit}>
 
-<div className="title">
+<div className="title" id='/upd'>
         <textarea value={title} required onChange={(e)=>setTitle(e.target.value)} type="text" placeholder='Enter Title here' />
         </div>
         <div className="btntext">

@@ -5,8 +5,10 @@ import AdminContent from './AdminContent'
 import { authAxios } from '../../axiosInterceptor/AxiosInterceptor'
 import UpdatePage from './UpdatePage'
 import {Link} from 'react-router-dom'
+import{HashLink as Lk} from 'react-router-hash-link'
 const AdminPanel = () => {
         const [users,setUsers] = useState([])
+        const [toggle,setToggle] = useState(true)
         useEffect(()=>{
             authAxios.get('/subscribers')
             .then(res =>setUsers(res.data))
@@ -19,17 +21,27 @@ const AdminPanel = () => {
         <div className="adminlogo">
             <img src={modeUi} alt="" />
         </div>
-            <div>
-                users
+            <div className={toggle?"nav1":'nav2'}>
+            <div onClick={()=>setToggle(!toggle)}>
+            <Lk smooth to='#/subs'>subscribers</Lk>
             </div>
-            <div>
-                subscribers
+            <div  onClick={()=>setToggle(!toggle)}>
+               <Lk smooth to='#/users'>Users</Lk>
             </div>
-            <div>
-                admin
+            <div  onClick={()=>setToggle(!toggle)}>
+            <Lk smooth to='#/upd'>update</Lk>
             </div>
-            <div>
-                <Link to='/'>HomePage</Link>
+            
+            </div>
+            <div className='navhome'>
+            <div >
+                <Link to='/'><span className="material-symbols-outlined">
+                home
+                </span></Link>
+            </div>
+            <span  onClick={()=>setToggle(!toggle)} className="material-symbols-outlined">
+                {toggle?'menu':'close'}
+                </span>
             </div>
         </div>
         <UpdatePage/>

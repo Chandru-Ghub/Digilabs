@@ -24,6 +24,7 @@ const Component1 = () => {
             <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
       </div>
       <span id='testi'></span>
+      <span id='sub'></span>
     </div>
   )
 }
