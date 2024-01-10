@@ -1,32 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-import AnnouncementBar from './components/AnnouncementBar';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import LogoCloud from './components/LogoCloud';
-import Feature1 from './components/Feature1';
-import Feature2 from './components/Feature2';
-import Component1 from './components/Component1';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Testimonial from './components/Testimonial';
-import Cards from './components/Cards';
-import { BrowserRouter} from 'react-router-dom'
+import { BrowserRouter, Routes} from 'react-router-dom'
+import AdminPanel from './components/Admin/AdminPanel';
+import { Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Signin from './pages/Signin';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <AnnouncementBar/>
-        <Navbar/>
-        <HeroSection/>
-        <LogoCloud/>
-        <Feature1/>
-        <Feature2/>
-        <Cards/>
-        <Component1/>
-        <Testimonial/>
-        <Contact/>
-        <Footer/>
+        <Routes>
+          <Route path='/' element={ <Home/>}/>
+        </Routes>
+        <Routes>
+          <Route path='/dashboard' element={ <AdminPanel/>}/>
+        </Routes>
+        <Routes>
+          <Route path='/signin' element={ <Login/>}/>
+        </Routes>
+        <Routes>
+          <Route path='/signup' element={ <Signin/>}/>
+        </Routes>
         </BrowserRouter>
     </div>
   );

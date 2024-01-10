@@ -6,6 +6,11 @@ import {motion,useScroll} from 'framer-motion'
 const Navbar = () => {
     const [toggle,setToggle] = useState(true)
     const {scrollYProgress} = useScroll()
+    const status = window.localStorage.getItem('isAdmin')
+    const logout =()=>{
+      window.localStorage.clear()
+      window.location.reload()
+    }
   return (
     <div className="navbar">
        <motion.div
@@ -34,16 +39,24 @@ const Navbar = () => {
           <span className="material-symbols-outlined">
 expand_more
 </span></Link></li>
-          <li><Link onClick={()=>setToggle(!toggle)} to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li>
+          {/* <li><Link onClick={()=>setToggle(!toggle)} to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li> */}
           <li><Link onClick={()=>setToggle(!toggle)} to='/#testi' smooth style={{color:'inherit'}}>Testimonial</Link></li>
           <li><Link onClick={()=>setToggle(!toggle)} to='/#contact' smooth style={{color:'inherit'}}>Contact</Link></li>
+{status=='true'?<li><Link onClick={()=>setToggle(!toggle)} to='/dashboard' smooth style={{color:'inherit'}}>Dashboard</Link></li>:''}
         </ul>
       </div>
 
       <div className="navright">
         <div className="logout">
-        <span>Login</span>
+       {status ?<>
+        <span onClick={()=>logout()}>logout</span>
+        <span className="material-symbols-outlined">logout</span>
+       </>:
+       <>
+        <span><Link to='/signin' smooth style={{color:'inherit'}}>Login</Link></span>
         <span className="material-symbols-outlined">login</span>
+       </>
+      }
         </div>
         <div className="menu">
             <span onClick={()=>setToggle(!toggle)} className="material-symbols-outlined">
