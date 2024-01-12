@@ -7,7 +7,7 @@ import { authAxios } from '../axiosInterceptor/AxiosInterceptor'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import axios from 'axios'
-const Signin = () => {
+const Register = () => {
     const navigate = useNavigate()
     const [username,setUsername] = useState('')
     const [password,setPassword] = useState('')
@@ -75,4 +75,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Register

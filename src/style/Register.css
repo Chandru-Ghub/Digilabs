@@ -25,7 +25,7 @@
             margin-bottom: 10px;
         }
         >div{
-            display: flex;
+            display: flex !important;
             gap: 10px;
             color: blue;
             flex-wrap: wrap;

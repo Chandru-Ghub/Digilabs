@@ -5,7 +5,7 @@ import AdminPanel from './components/Admin/AdminPanel';
 import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Signin from './pages/Signin';
+import Register from './pages/Register';
 import { useState } from 'react';
 function App() {
   const status = window.localStorage.getItem('isAdmin')
@@ -30,7 +30,7 @@ function App() {
           <Route path='/signin' element={ <Login/>}/>
         </Routes>
         <Routes>
-          <Route path='/signup' element={ <Signin/>}/>
+          <Route path='/signup' element={ <Register/>}/>
         </Routes>
         </BrowserRouter>
     </div>
