@@ -5,7 +5,7 @@ const Cards = () => {
     <div className="payments" >
         <span id='banking'></span>
         <div className='ll1'></div>
-            <p>For your security, all orders are processed via Stripe or PayPal.</p>
+        <div>For your security, all orders are processed via Stripe or PayPal.</div>
             <ul>
                   <li>
                         <img src="https://framerusercontent.com/images/CkH8mwbWXUIOeu6yCHOQUGWothg.svg" alt="" />
@@ -26,7 +26,7 @@ const Cards = () => {
                         <img src="https://framerusercontent.com/images/QpOzHv8krclf7UKCN5HoXsbiWqM.svg" alt="" />
                   </li>
             </ul>
-            <p>You can cancel your subscription anytime.</p>
+            <div>You can cancel your subscription anytime.</div>
             <div className='ll2'></div>
       </div>
   )

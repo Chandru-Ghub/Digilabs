@@ -13,7 +13,7 @@ const AdminPanel = () => {
             authAxios.get('/subscribers')
             .then(res =>setUsers(res.data))
             .catch(err => {
-                window.location.reload()
+           
                 console.log(err)
             })
         },[])

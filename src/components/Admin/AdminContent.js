@@ -46,15 +46,17 @@ const fetchData = async()=>{
                 Registered Users!
             </div>
             <table>
+            <thead>
             <tr>
                 <th>S.NO</th>
                 <th>User Name</th>
                 <th>Email ID</th>
             </tr>
+            </thead>
            {
                 users.map((data,i)=>{
                     return(
-                       <tbody>
+                       <tbody key={i}>
                         <tr>
                             <td>
                                 {i+1}.

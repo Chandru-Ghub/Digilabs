@@ -14,7 +14,6 @@ const UpdatePage = () => {
     const[title,setTitle] = useState();
     const [open,setOpen] = useState(false);
     const fetchData = async()=>{
-        console.log('f////irst')
         try {
             const res = await authAxios.get('/getpage')
         setPage(res.data)

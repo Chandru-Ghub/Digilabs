@@ -24,7 +24,7 @@ const Login = () => {
                 window.localStorage.setItem('isAdmin',res.data.data.isAdmin)
                 setOpen(false)
                 navigate('/')
-                // window.location.reload()
+                window.location.href = '/'
             } catch (error) {
                 setOpen(false)
                 if(error.response.data == 'invalid username!')
@@ -50,15 +50,19 @@ const Login = () => {
 </div>
         <div className='register'>
             <div className="demo">
+                <div className="dm1">
                 <p>Admin User</p>
                 <div>
                     <p>username: <span>chandru</span></p>
                     <p>password: <span>12345</span></p>
                 </div>
+                </div>
+                <div className="dm1">
                 <p>Demo User</p>
                 <div>
                     <p>username: <span>user1</span></p>
                     <p>password: <span>12345</span></p>
+                </div>
                 </div>
             </div>
         <div className="registercon loginpg">

@@ -1,11 +1,12 @@
 .register{
     background-color: rgb(215, 215, 215);
-    height: 100vh;
+    height: 82vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
     position: relative;
+    flex-direction: column;
     /* background-position: center; */
   
 }
@@ -13,32 +14,37 @@
     position: absolute;
     left: 30px;
     top: 30px;
+    column-gap: 20px;
     padding: 10px 20px;
-    >p{
-        color: #582066;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    >div{
-        display: flex;
-        gap: 10px;
-        color: blue;
-        flex-wrap: wrap;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    >.dm1{
         >p{
-            letter-spacing: 1px;
-            border: 1px solid rgb(157, 157, 157);
-            padding:10px 10px;
-            font-size: 14px;
-            margin-bottom: 15px;
-            background-color: white;
-            >span{
-                color: red;
+            color: #582066;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        >div{
+            display: flex;
+            gap: 10px;
+            color: blue;
+            flex-wrap: wrap;
+            justify-content: center;
+            >p{
+                letter-spacing: 1px;
+                border: 1px solid rgb(157, 157, 157);
+                padding:10px 10px;
+                font-size: 14px;
+                margin-bottom: 15px;
+                background-color: white;
+                >span{
+                    color: red;
+                }
             }
         }
     }
 }
-.password{}
+
 .registercon{
     display: flex;
     flex-direction: column;
@@ -46,6 +52,7 @@
     padding: 20px;
     margin: 15px; 
     max-width: 560px;
+    margin-top: 80px;
     /* width: 45%; */
     >h3{
        
@@ -166,6 +173,24 @@
 }
 .errpass{
     color: red;
+}
+@media (max-width:1050px){
+
+    .demo{
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        column-gap: 20px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:700px){
+
+    .registercon{
+        margin-top: 250px;
+    }
 }
 @media (max-width:500px){
     .regtitle{

@@ -63,7 +63,6 @@ const Signin = () => {
                     <input onChange={(e)=>setPassword(e.target.value)}  required className="password" placeholder='password' />
                     <p style={{color:err=='User Registred sucessfully!'?'#14ef14':'red',fontWeight:'700'}}>{err}</p>
                 </div>
-               
             <div className="createaccountbtn">
                 <button type='submit' className='btncrtacc'>
                     SIGNUP
