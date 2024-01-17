@@ -31,8 +31,7 @@ const Subscription = () => {
   >
     <CircularProgress color="inherit" />
   </Backdrop>
-    {
-        !status && <>
+
              <div className='subsContainer'>
             <form className='submail' onSubmit={addSubscribers}>
                 <h3>Subscribe now</h3>
@@ -43,11 +42,6 @@ const Subscription = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facere nesciunt saepe id sed ut quia provident illum cupiditate rem quod ipsa vel, ipsum molestiae</p>
             </form>
     </div>
-
-
-        </>
-    }
-    
    </div>
   )
 }
