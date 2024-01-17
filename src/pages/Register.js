@@ -6,7 +6,8 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import { authAxios } from '../axiosInterceptor/AxiosInterceptor'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-import axios from 'axios'
+import {toast,ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css' 
 const Register = () => {
     const navigate = useNavigate()
     const [username,setUsername] = useState('')
@@ -23,8 +24,8 @@ const Register = () => {
             try {
                 const res = await authAxios.post('https://digilabsbackend.onrender.com/api/signup',{username,password,email})
                 setOpen(false)
-                console.log(res.data)
                 setErr(res.data)
+                toast.success('Login sucessfully!!')
                 navigate('/signin')
 
             } catch (error) {
@@ -51,6 +52,7 @@ const Register = () => {
   </Backdrop>
 </div>
         <div className='register'>
+        <ToastContainer/>
         <div className="registercon loginpg">
             <h3>SHOPY</h3>
             <div className="regtitle">

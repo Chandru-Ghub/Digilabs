@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import '../style/Register.css'
 import {Link, useNavigate} from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import {toast,ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css' 
 import AnnouncementBar from '../components/AnnouncementBar'
 import { authAxios } from '../axiosInterceptor/AxiosInterceptor'
 import Backdrop from '@mui/material/Backdrop';
@@ -22,6 +24,7 @@ const Login = () => {
                 window.localStorage.setItem('modeUItoken',res.data.token)
                 window.localStorage.setItem('isAdmin',res.data.data.isAdmin)
                 setOpen(false)
+                toast.success('Login sucessfully!!')
                 window.location.href = '/'
             } catch (error) {
                 setOpen(false)
@@ -47,6 +50,7 @@ const Login = () => {
   </Backdrop>
 </div>
         <div className='register'>
+        <ToastContainer/>
             <div className="demo">
                 <div className="dm1">
                 <p>Admin User</p>

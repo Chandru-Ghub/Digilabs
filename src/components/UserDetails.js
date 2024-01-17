@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { authAxios } from '../axiosInterceptor/AxiosInterceptor'
-import {toast,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css' 
 import '../style/MailComp.css'
-import gmail from '../Images/gmail1.png'
 const UserDetails = ({userId,setClose}) => {
     const id = userId
     const[userData,setUserData] = useState('')
     const fetchData=async()=>{
         try{
             const userData = await authAxios.get('/getuserdetail/'+id)
-            console.log(userData)
             setUserData(userData.data)
         }catch(err){
           console.log(err)

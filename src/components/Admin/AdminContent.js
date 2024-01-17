@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import axios from 'axios'
 import {toast,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css' 
 import { authAxios } from '../../axiosInterceptor/AxiosInterceptor'
@@ -115,7 +114,7 @@ const showDetails=(id)=>{
                             <span className="material-symbols-outlined">mail</span>
                           </p>
                           <p onClick={()=>showDetails(data._id)} className='readmail' title='Send mail'>
-                          <span class="material-symbols-outlined">library_books</span>
+                          <span className="material-symbols-outlined">library_books</span>
                           </p>
                          { !data.isAdmin ? <p onClick={()=>handleDelete(data._id,true)} className='deletemail' title='Delete subscription!'>
                             <span className="material-symbols-outlined">

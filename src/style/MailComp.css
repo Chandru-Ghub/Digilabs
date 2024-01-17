@@ -58,10 +58,12 @@
             outline: none;
             border: 2px solid rgb(207, 207, 207);
         }
-        >input{
-            height: 40px;
-            padding-left: 10px;
+        >div{
             outline: none;
+            display: flex;
+            padding-left: 10px;
+            align-items: center;
+            height: 40px;
             border: 2px solid rgb(207, 207, 207);
         }
         >button{

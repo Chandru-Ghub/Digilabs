@@ -29,12 +29,12 @@ const MailComp = ({email,setShow,logo}) => {
                 </span>
         <ToastContainer/>
         <div className="sendmails">
-                <form>
+                <form onSubmit={handleSend}>
                   <p>To:</p>
-                <input type="text" value={email} />
+                <div>{email}</div>
                 <p>Message:</p>
             <textarea required onChange={(e)=>setMessage(e.target.value)} value={message} name="" id="" cols="30" rows="10"></textarea>
-            <button onClick={handleSend}>Send</button>
+            <button type='submit'>Send</button>
                 </form>
         </div>
     </div>
