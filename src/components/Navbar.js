@@ -41,8 +41,7 @@ expand_more
 </span></Link></li>
           {/* <li><Link onClick={()=>setToggle(!toggle)} to='/#banking' smooth style={{color:'inherit'}}>Banking</Link></li> */}
           <li><Link onClick={()=>setToggle(!toggle)} to='/#testi' smooth style={{color:'inherit'}}>Testimonial</Link></li>
-          <li><Link onClick={()=>setToggle(!toggle)} to='/#contact' smooth style={{color:'inherit'}}>Contact</Link></li>
-{!status && <li><Link onClick={()=>setToggle(!toggle)} to='/#sub' smooth style={{color:'inherit'}}>Subscribe</Link></li>}
+ <li><Link onClick={()=>setToggle(!toggle)} to='/#sub' smooth style={{color:'inherit'}}>Subscribe</Link></li>
 {status=='true'?<li><Link onClick={()=>setToggle(!toggle)} to='/dashboard' smooth style={{color:'inherit'}}>Dashboard</Link></li>:''}
         </ul>
       </div>

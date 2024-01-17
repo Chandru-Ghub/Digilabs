@@ -59,7 +59,7 @@ useEffect(()=>{
         <span onClick={()=>setToggle(!toggle)} className="material-symbols-outlined">
                close
                 </span>
-<p>  public user can only able to acess the subscription not a admin or registred user</p>
+<p>Welcome to the mode UI lets make your website clean and elegant </p>
   <Marquee pauseOnHover={true} speed={30} delay={1} className='non'>
           <ul className='marqs'>
           <li>
