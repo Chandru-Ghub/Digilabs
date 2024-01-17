@@ -15,8 +15,12 @@ const Subscription = () => {
             if(data){
                 setEmail('')
                 if(data.status==200) alert('⚠️'+ data.data +' Please check your emailID')
-                else alert('Thank you for subscribing!!')
+                else{
+             alert('Thank you for subscribing!!')
+             window.location.reload()
+            }
                 setOpen(false)
+
             }
         } catch (error) {
             console.log(error)

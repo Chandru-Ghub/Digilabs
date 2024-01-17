@@ -1,6 +1,6 @@
 import axios from "axios"
 // https://digilabsbackend.onrender.com/api
-const apiUrl = 'https://digilabsbackend.onrender.com/api/'
+const apiUrl = 'http://localhost:4600/api/'
 // const accessToken = localStorage.getItem('shopytoken')
 const accessToken = localStorage.getItem('modeUItoken')
 

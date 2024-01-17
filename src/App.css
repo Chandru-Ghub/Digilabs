@@ -12,7 +12,7 @@
   position: relative;
   >.banner{
     position: fixed;
-    background: #f8f4f9;
+    background: #ffffff;
     height: 250px;
     display: flex;
     flex-direction: column;

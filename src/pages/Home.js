@@ -24,7 +24,7 @@ const Home = () => {
         <Feature2/>
         <Cards/>
         <Component1/>
-        <Subscription/>
+        <Subscription logo={logo}/>
         <Testimonial/>
         <Contact/>
         <Footer/>
