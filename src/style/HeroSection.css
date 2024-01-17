@@ -4,6 +4,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.647),rgba(255, 255, 255, 0.482)),url('./meshBG.avif');
+    /* height: 500px; You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
     /* background: linear-gradient(to right,rgb(208,200, 210),#ffffff,rgb(208, 200, 210)); */
     gap: 25px;
     /* padding: 128px,80px,32px,80px; */

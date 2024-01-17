@@ -3,7 +3,8 @@ import '../style/Component1.css'
 const Cards = () => {
   return (
     <div className="payments" >
-        <span id='banking'></span>
+      {/* id='banking' */}
+        <span ></span>
         <div className='ll1'></div>
         <div>For your security, all orders are processed via Stripe or PayPal.</div>
             <ul>

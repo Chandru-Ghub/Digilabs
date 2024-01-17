@@ -1,5 +1,5 @@
 import axios from "axios"
-
+// https://digilabsbackend.onrender.com/api
 const apiUrl = 'https://digilabsbackend.onrender.com/api/'
 // const accessToken = localStorage.getItem('shopytoken')
 const accessToken = localStorage.getItem('modeUItoken')

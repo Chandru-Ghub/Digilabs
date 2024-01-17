@@ -3,6 +3,7 @@ import axios from 'axios'
 import '../style/Subscription.css'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
+import { authAxios } from '../axiosInterceptor/AxiosInterceptor';
 const Subscription = () => {
     const[email,setEmail] = useState('')
     const [open,setOpen] = useState(false);
@@ -11,11 +12,12 @@ const Subscription = () => {
         e.preventDefault()
         setOpen(true)
         try {
-            const data = await axios.post('https://digilabsbackend.onrender.com/api/newsubscriber',{email})
+            const data = await authAxios.post('/newsubscriber',{email})
             if(data){
-                alert('Thank you subscribing!!')
-                setOpen(false)
                 setEmail('')
+                if(data.status==200) alert('⚠️'+ data.data +' Please check your emailID')
+                else alert('Thank you subscribing!!')
+                setOpen(false)
             }
         } catch (error) {
             console.log(error)

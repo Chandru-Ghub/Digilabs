@@ -21,7 +21,7 @@ const Register = () => {
             setOpen(true)
             console.log(username,password)
             try {
-                const res = await axios.post('https://digilabsbackend.onrender.com/api/signUP',{username,password,email})
+                const res = await authAxios.post('https://digilabsbackend.onrender.com/api/signup',{username,password,email})
                 setOpen(false)
                 console.log(res.data)
                 setErr(res.data)

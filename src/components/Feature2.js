@@ -8,10 +8,10 @@ const Feature2 = () => {
             <div className="con1" data-aos="fade-left"  data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>
             Elevating Card Programs with Cutting-Edge Technology
             </div>
-            <div className="con2">
+            <div className="con2"  id='card'>
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
-            <div className="compare">
+            <div className="compare" >
                 <button>
                 Compare all Pro features
                 </button>
@@ -21,7 +21,7 @@ const Feature2 = () => {
             </div>
         </div>
 
-        <div className="rows" id='card'>
+        <div className="rows">
         <div className="f2" data-aos="fade-right"  data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>
             <div className='f2top'>
                 Global library for fonts and color

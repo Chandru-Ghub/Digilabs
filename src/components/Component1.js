@@ -21,10 +21,8 @@ const Component1 = () => {
       <div className="comp1" data-aos="fade-up" data-aos-delay='100' data-aos-offset='350' data-aos-duration="1000" data-aos-once='true'>
             <span>2.0</span>
             <div>Latest Version</div>
-            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p id='sub'>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
       </div>
-      <span id='testi'></span>
-      <span id='sub'></span>
     </div>
   )
 }

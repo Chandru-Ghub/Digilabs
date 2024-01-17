@@ -8,7 +8,7 @@ const Feature1 = () => {
             <div className="con1" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000" data-aos-once='true'>
             Elevating Card Programs with Cutting-Edge Technology
             </div>
-            <div className="con2" >
+            <div className="con2" id='about'>
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
             <div className="compare" >

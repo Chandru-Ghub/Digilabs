@@ -42,7 +42,7 @@ const LogoCloud = () => {
           </ul>
         </Marquee>
         </div>
-        <span id='about'></span>
+        {/* <span id='about'></span> */}
     </div>
   )
 }

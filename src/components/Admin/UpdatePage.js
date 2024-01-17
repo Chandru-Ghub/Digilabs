@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { authAxios } from '../../axiosInterceptor/AxiosInterceptor'
 import './UpdatePage.css'
 import {v4} from 'uuid'
@@ -6,26 +6,21 @@ import {getDownloadURL, ref, uploadBytes} from 'firebase/storage'
 import { imgDB } from '../../Firebase'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
+import { myContext } from '../../App'
 
 const UpdatePage = () => {
-    const[page,setPage] = useState([])
-    const[logoImg,setFile] = useState();
-    const[buttonTxt,setBtnTxt] = useState();
-    const[title,setTitle] = useState();
+    const{logo,ttle,btn} = useContext(myContext)
+    const[logoImg,setFile] = useState('');
+    const[buttonTxt,setBtnTxt] = useState('');
+    const[title,setTitle] = useState('');
     const [open,setOpen] = useState(false);
-    const fetchData = async()=>{
-        try {
-            const res = await authAxios.get('/getpage')
-        setPage(res.data)
-        setTitle(res.data.title)
-        setBtnTxt(res.data.buttonTxt)
-        } catch (error) {
-            console.log(error)
-        }
+    const updateData = async()=>{
+        setTitle(ttle)
+        setBtnTxt(btn)
     }
     useEffect(()=>{
-        fetchData()
-    },[])
+        updateData()
+    },[btn])
 
     
     // Update page Details
@@ -36,7 +31,8 @@ const UpdatePage = () => {
         try {
             const update = await authAxios.post('/updatepage',logoImg?{title,buttonTxt,logoImg}:{title,buttonTxt})
             setOpen(false)
-            alert('Details updates!')
+            alert('Details updated!')
+            window.location.reload()
 
         } catch (error) {
             console.log(error)
@@ -44,6 +40,7 @@ const UpdatePage = () => {
     }
 
     // Handling image
+    // https://firebasestorage.googleapis.com/v0/b/shopyecommerce-e73af.appspot.com/o/DigilabsLogo%2F4112446e-7ed3-4aee-ab80-0e8f15f9c6e3?alt=media&token=c384094f-6a01-4f79-9925-494b7d64cc70
     const handleFile =(e)=>{
         setOpen(true)
         const selectFile = e.target.files[0]
@@ -70,15 +67,15 @@ const UpdatePage = () => {
         <div className='currentpg'>
             <div className="curlogo">
                 <p>Logo</p> <span>:</span>
-                <img className='actimg' src={page.logoImg} alt="" />
+                <img className='actimg' src={logo} alt="" />
             </div>
             <div className="titleupdate">
                 <p>Title </p> <span>:</span>
-                <div>{page.title}</div>
+                <div>{ttle}</div>
             </div>
             <div className="btnname">
                 <p>Button Text</p><span>:</span>
-                <div>{page.buttonTxt}</div>
+                <div>{btn}</div>
             </div>
     </div>
 

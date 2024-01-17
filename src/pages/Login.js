@@ -6,7 +6,6 @@ import AnnouncementBar from '../components/AnnouncementBar'
 import { authAxios } from '../axiosInterceptor/AxiosInterceptor'
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-import axios from 'axios'
 const Login = () => {
     const navigate = useNavigate()
     const [username,setUsername] = useState('')
@@ -19,11 +18,10 @@ const Login = () => {
             setOpen(true)
             console.log(username,password)
             try {
-                const res = await axios.post('https://digilabsbackend.onrender.com/api/signin',{username,password})
+                const res = await authAxios.post('https://digilabsbackend.onrender.com/api/signin',{username,password})
                 window.localStorage.setItem('modeUItoken',res.data.token)
                 window.localStorage.setItem('isAdmin',res.data.data.isAdmin)
                 setOpen(false)
-                navigate('/')
                 window.location.href = '/'
             } catch (error) {
                 setOpen(false)
@@ -81,7 +79,7 @@ const Login = () => {
             <div className="forgotpass">
                <span>
                </span>
-                <Link to='/signup' ><span>Create New Account</span></Link>
+                <Link to='/signup' ><span>SignUp or Register</span></Link>
             </div>
             <div className="createaccountbtn">
                 <button type='submit' className='btncrtacc'>

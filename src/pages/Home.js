@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import AnnouncementBar from '../components/AnnouncementBar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -11,26 +11,14 @@ import Contact from '../components/Contact';
 import Testimonial from '../components/Testimonial';
 import Cards from '../components/Cards';
 import Subscription from '../components/Subscription';
-import axios from 'axios';
+import { myContext } from '../App';
 const Home = () => {
-  const[logo,setLogo] = useState('')
-  const[title,setTitle] = useState('')
-  const[btn,setBtn] = useState('')
-  useEffect(()=>{
-    axios.get('https://digilabsbackend.onrender.com/api/getpage')
-    .then(res =>{
-      setLogo(res.data.logoImg)
-      setTitle(res.data.title)
-      setBtn(res.data.buttonTxt)
-    }
-    )
-    .catch(err => console.log(err))
-  })
+  const {logo,ttle,btn} = useContext(myContext)
   return (
     <div className="App">
          <AnnouncementBar/>
         <Navbar logo={logo}/>
-        <HeroSection title={title} btn={btn}/>
+        <HeroSection ttle={ttle} btn={btn}/>
         <LogoCloud/>
         <Feature1/>
         <Feature2/>

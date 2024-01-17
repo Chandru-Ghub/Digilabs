@@ -58,7 +58,7 @@ expand_more
         <span className="material-symbols-outlined">login</span>
         </div>
       }
-        <div className="menu">
+        <div className="menu" >
             <span onClick={()=>setToggle(!toggle)} className="material-symbols-outlined">
                 {toggle?'menu':'close'}
                 </span>

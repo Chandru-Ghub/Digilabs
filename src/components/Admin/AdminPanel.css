@@ -34,15 +34,52 @@
     border-top: 1px solid rgb(230, 230, 230);
     border-bottom: 1px solid rgb(230, 230, 230);
     >.adminlogo{
-      
+      >img{
+        width: 70px;
+      }
 
     }
 }
+/* SUBSCRIBERS */
 
+.actions{
+   position: absolute;
+   display: flex;
+   gap: 20px;
+   right: 80px;
+   background: rgb(255, 255, 255);
+   
+
+}
+.sendmail{
+    color: rgb(175, 174, 174);
+    transition: .5s;
+}
+.sendmail:hover{
+    transform: scale(1.1);
+    color:#732187;
+}
+.readmail{
+    color: rgb(175, 174, 174);
+    transition: .5s;
+}
+.readmail:hover{
+    transform: scale(1.1);
+    color:rgb(11, 199, 11);
+}
+.deletemail{
+    color: rgb(175, 174, 174);
+    transition: .5s;
+}
+.deletemail:hover{
+    transform: rotate(30deg);
+    color: red;
+}
 .subscribers{
     display: flex;
     flex-direction: column;
     margin-bottom: 80px;
+    position: relative;
    >ul{
     display: flex;
     column-gap: 20px;
@@ -75,9 +112,9 @@ table{
     /* background: red; */
  >thead{
     >tr{
-        background: #83528f;
+        background: #764981;
           >th{
-              padding: 20px;
+              padding: 15px;
               border-bottom: 1px solid rgb(230, 230, 230);
               cursor: pointer;
               color: #ffffff;
@@ -140,32 +177,53 @@ tbody{
         display: none;
     }
 }
+.threework{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    >p{
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >span{
+            /* font-size: 18px; */
+        }
+    }
+}
 @media(max-width:880px){
     .nav1{
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         row-gap: 30px;
         padding: 30px 0;
-        top: 50px;
-        width: 100%;
+        left: 50px;
+        bottom: 0;
+        top: 95px;
+        width: 300px;
+        border-top: 2px solid #582066;
+        height: 100vh;
         text-align: start;
+        justify-content: start;
         left: 0;
         background: rgb(255, 255, 255);
-        transition: 1.5s;
+        transition: 1s;
         z-index: 1;
         box-shadow: 5px 2px 20px rgb(181, 181, 181);
         >div{
-            margin-right: 80px;
+            /* margin-right: 80px; */
             border-bottom: 2px solid rgb(241, 239, 239);
             padding-left: 20px;
+           
         }
 
     }
     .navhome{
         display: flex;
         gap: 30px;
+        justify-content: start;
         >span{
             display: block;
             position: absolute;
@@ -175,17 +233,21 @@ tbody{
     .nav2{
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         row-gap: 30px;
         padding: 30px 0;
-        top: -500px;
-        width: 100%;
+        background: red;
+        left: -500px;
+        bottom: 0;
+        top: 95px;
+        width: 300px;
+        border-top: 2px solid #582066;
+        height: 100vh;
         text-align: start;
-        left: 0;
+        justify-content: start;
         background: rgb(255, 255, 255);
-        transition: 1.5s;
+        transition: 1s;
         z-index: 1;
-        box-shadow: 5px 2px 20px rgb(181, 181, 181);
         >div{
             margin-right: 80px;
             border-bottom: 2px solid rgb(241, 239, 239);
@@ -199,10 +261,20 @@ tbody{
         }
     }
 }
+
 @media (max-width:550px){
+
     
 table{
     /* background: red; */
+
+    >thead{
+        >tr{
+            >th{
+                font-size: 12px;
+            }
+        }
+    }
     >tr{
       background: #83528f;
         >th{
@@ -229,11 +301,117 @@ tbody{
     }
    
 }
+
+}
+
+@media (max-width:480px){
+    .actions{
+        position: absolute;
+        display: flex;
+        gap: 20px;
+        right: 10px;
+    }
+    .subscribers{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        position: relative;
+       >ul{
+        display: flex;
+        column-gap: 20px;
+        padding: 20px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        cursor: pointer;
+        >.sno{
+            color: #582066;
+            font-weight: 700;
+        }
+        >li{
+            font-size: 13px;
+            
+        }
+        >.actions{
+            >p{
+                >span{
+                    font-size: 15px;
+                }
+            }
+        }
+       }
+       >ul:hover{     
+        background: rgb(243, 242, 242);
+      }
+       >.subsmem{
+        margin-bottom: 10px;
+        text-align: start;
+        padding-left: 20px;
+        font-size: 25px;
+        color: #582066;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+       }
+    
+    }
+    .threework{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        >p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >span{
+                font-size: 18px;
+            }
+        }
+    }
+    tbody{
+        >tr{
+          
+            >td{
+                padding: 18px;
+                border-bottom: 1px solid rgb(230, 230, 230);
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 10px;
+            }
+            
+        }
+       
+    }
+
+    
+}
+
+@media (max-width:380px){
+    table{
+        /* background: red; */
+     >thead{
+        >tr{
+            background: #764981;
+              >th{
+                  padding: 7px;
+                  border-bottom: 1px solid rgb(230, 230, 230);
+                  cursor: pointer;
+                  color: #ffffff;
+                  font-size: 10px;
+                  font-weight: 700;
+              }
+          }
+     }
+    }
 }
 @media (max-width:340px){
     
 table{
-    /* background: red; */
+    >thead{
+        >tr{
+            >th{
+                font-size: 10px;
+            }
+        }
+    }
     >tr{
       background: #83528f;
         >th{

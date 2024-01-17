@@ -11,33 +11,72 @@
   text-align: center;
   position: relative;
   >.banner{
-    position: absolute;
-    top: 250px;
-    background: #ffffff;
+    position: fixed;
+    background: #f8f4f9;
     height: 250px;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 300px;
-    left: 27%;
-    color: #582066;
+    left: 50%;
+    top:50%;
+    color: #737373;
     border: 2px solid #d4d4d4;
     box-shadow: 5px 2px 20px rgb(181, 181, 181);
     border-radius: 10px;
     z-index: 50;
+    font-weight: 500;
+    transform: translate(-50%,-50%);
+    padding: 0 10px;
+    >.plogo{
+      border-bottom: 2px solid #582066;
+      width: 80%;
+      padding-bottom: 5px;
+      >img{
+        width: 80px;
+        margin-top: 30px;
+        
+      }
+    }
   }
   >.banner2{
     display: none;
   }
 >div{
-  >p{
+  >span{
     position: absolute;
     top: 10px;
-    font-size: 20px;
-    right: 15px;
+    font-size: 18px;
+    right: 10px;
     cursor: pointer;
+    color: rgb(173, 171, 171);
+    border-radius: 50%;
+    transition: .5s;
+    border: 1px solid rgb(155, 155, 155);
+  }
+  >span:hover{
     color: red;
+    transform: rotate(90deg);
   }
 }
 }
+.marqs{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  >li{
+      >img{
+          width: 60px;
+      }
+  }
+}
+
+.non::-webkit-scrollbar {
+  display: none;
+}
+
 
