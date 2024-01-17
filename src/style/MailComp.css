@@ -44,7 +44,7 @@
         width: 25px;
     }
 }
-.sendmail{
+.sendmails{
     >form{
         display: flex;
         flex-direction: column;

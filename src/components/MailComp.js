@@ -28,7 +28,7 @@ const MailComp = ({email,setShow,logo}) => {
                 close
                 </span>
         <ToastContainer/>
-        <div className="sendmail">
+        <div className="sendmails">
                 <form>
                   <p>To:</p>
                 <input type="text" value={email} />
